@@ -65,6 +65,20 @@ ul {
 }
 .active {
   border-bottom: 2px solid #09fffd;
+  background-color: #081f29;
+}
+
+/* Flèche vers le bas */
+.active::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  background-color: #09fffd;
+  transform: rotate(45deg) translateX(-50%);
+  bottom: -12px;
+  z-index: -1;
+  left: 50%;
 }
 
 li > a {
