@@ -68,7 +68,9 @@ h1 {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 2px #3687de solid;
+  padding: 0 48px;
 }
 
 ul {
@@ -101,11 +103,17 @@ ul {
 li > a {
   text-transform: uppercase;
   text-decoration: none;
+  font-family: sans-serif;
   color: #c4c4c4;
 }
 
 #top-nav li {
   padding: 32px;
+  position: relative;
+  top: 2px;
+}
+#top-nav li.arrow {
+  padding: 0;
   position: relative;
   top: 2px;
 }
