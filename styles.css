@@ -38,6 +38,22 @@ main {
   padding: 18px 32px 12px 18px;
   background-color: #354c56;
   text-transform: uppercase;
+  position: relative;
+  overflow-x: hidden;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+  font-family: sans-serif;
+}
+.tag::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 12px solid #09fffd;
+  border-top: 8px solid transparent;
+  border-right: 8px solid transparent;
+  left: 0;
+  bottom: 5px;
+  transform: rotate(-10deg);
 }
 
 h1 {
